@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+    {% load plotly_dash %}
+    <div style = "background: #1a2d46">
+        {{ plot | safe }}
+    </div>
+    
+
+{% endblock %}
