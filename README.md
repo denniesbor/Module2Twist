@@ -61,6 +61,7 @@ The model performance is evaluated on mean square error. The error is 37, and it
 The model is deployed as a webapp and integrates some of the EDA visualization components. The app is hosted on AWS and it's accessible to the public on <a href="https://www.denniesbor.link">DENNIESBOR.COM</a>
 
 <h3><center><strong>References & Resources</strong></center></h3>
+The web app is developed with Python Django, Django Dash, and it is hosted on the development branch of this repo. The references are:
 <ol>
 <li> Population data: <a href="https://open.africa/dataset/2019-kenya-population-and-housing-census">Open Africa</a></li>
 <li> Fertilizer imports: <a href="http://kilimodata.developlocal.org/dataset/kenya-sorghum-production-by-counties">Govt Kilimo Repo</a></li>
