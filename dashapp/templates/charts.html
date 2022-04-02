@@ -1,10 +1,15 @@
 {% extends 'index.html' %}
 {% load static %}
 {% block content %}
+
     {% load plotly_dash %}
-    <div style = "background: #1a2d46">
-        {{ plot | safe }}
+
+    <div class="{% plotly_class name='PriceQuantity' %} card" style="height: 100%; width: 100%">
+        {% plotly_app name='PriceQuantity' ratio=0.45 %}
+    </div>
+
+    <div class="{% plotly_class name='Climate' %} card" style="height: 100%; width: 100%">
+        {% plotly_app name='Climate' ratio=0.6 %}
     </div>
     
-
 {% endblock %}

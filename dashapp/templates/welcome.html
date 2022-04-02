@@ -3,10 +3,13 @@
 {% block content %}
 
     {% load plotly_dash %}
-    <h2>Home Page</h2>
 
-    <div class="{% plotly_class name='SimpleExample' %} card" style="height: 100%; width: 100%">
-        {% plotly_app name='SimpleExample' ratio=0.6 %}
+    <div class="{% plotly_class name='PriceDistCounty' %} card" style="height: 100%; width: 100%">
+        {% plotly_app name='PriceDistCounty' ratio=0.45 %}
     </div>
+
+    <div class="{% plotly_class name='Choropleth' %} card" style="height: 100%; width: 100%">
+        {% plotly_app name='Choropleth' ratio=0.6 %}
+    </div> 
 
 {% endblock %}

@@ -11339,6 +11339,7 @@ body {
   flex-grow: 1;
   min-height: calc(100vh - 56px);
   margin-left: -225px;
+  /* background-color: #212212 !important; */
 }
 
 .sb-sidenav-toggled #layoutSidenav #layoutSidenav_nav {

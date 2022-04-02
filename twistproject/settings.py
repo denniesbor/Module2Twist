@@ -26,7 +26,9 @@ SECRET_KEY = 'django-insecure-8!wxivi04(bbjt2&^2640ukql-c7vy+os_9$7+09@2m2^%n$c#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'denniesbor.link','www.denniesbor.link'
+]
 
 
 # Application definition
@@ -178,13 +180,14 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATICFILES_LOCATION = 'static'
-STATIC_URL = 'static/'
-STATIC_ROOT='static'
+STATIC_URL = '/static/'
+
+if not DEBUG:
+    STATIC_ROOT = ''
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'dashapp','static'),
+    os.path.join(BASE_DIR, 'static/'),
 ]
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
